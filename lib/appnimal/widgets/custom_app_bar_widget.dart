@@ -1,3 +1,4 @@
+import 'package:appnimal/appnimal/constant/color.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBarWidget extends StatelessWidget
@@ -29,7 +30,7 @@ class CustomAppBarWidget extends StatelessWidget
           child: Icon(Icons.search, color: Colors.white),
         ),
       ],
-      backgroundColor: const Color(0xFF395253),
+      backgroundColor: AppColors.colorFondoPrincipal,
     );
   }
 
