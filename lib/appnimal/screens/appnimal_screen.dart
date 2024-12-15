@@ -5,7 +5,7 @@ import '../widgets/item_widget.dart';
 import '../widgets/contenedor_decorativo_widget.dart';
 import '../models/item_model.dart';
 import '../utils/load_items.dart' as utils;
-import '../constant/color.dart';
+import '../constants/color.dart';
 
 class Appnimal extends StatefulWidget {
   const Appnimal({super.key});

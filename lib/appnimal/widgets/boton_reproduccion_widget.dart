@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../constant/color.dart';
+import '../constants/color.dart';
 
 class BotonReproduccionPausa extends StatelessWidget {
   final bool enReproduccion;

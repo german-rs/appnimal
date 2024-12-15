@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../constant/color.dart';
+import '../constants/color.dart';
 
 class ContenedorDecorativoWidget extends StatelessWidget {
   final double bottom;

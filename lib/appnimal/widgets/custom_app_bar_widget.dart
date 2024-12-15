@@ -1,4 +1,4 @@
-import 'package:appnimal/appnimal/constant/color.dart';
+import 'package:appnimal/appnimal/constants/color.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBarWidget extends StatelessWidget

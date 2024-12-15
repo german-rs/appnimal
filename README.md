@@ -29,6 +29,7 @@ appnimal/
 │   ├── detalle_screen.dart
 ├── utils/
 │   ├── load_items.dart
+│   ├── routes.dart
 ├── widgets/
 │   ├── audio_player_widget.dart
 │   ├── boton_reproduccion_widget.dart
@@ -53,7 +54,7 @@ appnimal/
 
 | Principal | Detalle |
 |-----------|-----------|
-| ![Imagen de la pantalla principal](assets/img_readme/principal.jpg) | ![Imagen de la pantalla detalle](assets/img_readme/detalle.jpg) |
+| ![Imagen de la pantalla principal](assets/img_readme/appnimal.jpg) | ![Imagen de la pantalla detalle](assets/img_readme/detalle.jpg) |
 
 
 

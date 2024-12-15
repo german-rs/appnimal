@@ -1,42 +1,19 @@
 import 'package:flutter/material.dart';
 import '../models/item_model.dart';
 import 'audio_player_widget.dart';
-import '../screens/detalle_screen.dart';
+import '../constants/color.dart';
+import '../utils/routes.dart';
 
 class ItemWidget extends StatelessWidget {
   final ItemModel item;
 
   const ItemWidget({super.key, required this.item});
 
-  Route _createRoute() {
-    return PageRouteBuilder(
-      pageBuilder: (context, animation, secondaryAnimation) => DetalleScreen(
-        title: item.title,
-        imagePath: item.detailImage,
-        description: item.description,
-      ),
-      transitionsBuilder: (context, animation, secondaryAnimation, child) {
-        const begin = Offset(1.0, 0.0);
-        const end = Offset.zero;
-        const curve = Curves.ease;
-
-        var tween =
-            Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
-        var offsetAnimation = animation.drive(tween);
-
-        return SlideTransition(
-          position: offsetAnimation,
-          child: child,
-        );
-      },
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.of(context).push(_createRoute());
+        Navigator.of(context).push(createRoute(item));
       },
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 10.0),
@@ -59,6 +36,26 @@ class ItemWidget extends StatelessWidget {
                 right: 8,
                 child: AudioPlayerWidget(
                   rutaAudio: item.audioPath,
+                ),
+              ),
+              Positioned(
+                top: 16,
+                left: 16,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white70,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  padding: const EdgeInsets.all(4.0),
+                  child: Text(
+                    item.title,
+                    style: const TextStyle(
+                      color: AppColors.colorTextoImg,
+                      fontFamily: 'Montserrat',
+                      fontWeight: FontWeight.w600,
+                      fontSize: 18,
+                    ),
+                  ),
                 ),
               ),
             ],
