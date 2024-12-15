@@ -11,8 +11,9 @@ class EncabezadoWidget extends StatelessWidget {
         Text(
           'Descubramos',
           style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
+            fontSize: 32,
+            fontFamily: 'Montserrat',
+            fontWeight: FontWeight.w600,
             color: Colors.white,
           ),
         ),
@@ -20,6 +21,8 @@ class EncabezadoWidget extends StatelessWidget {
         Text(
           'juntos nuestro majestuoso mundo.',
           style: TextStyle(
+            fontFamily: 'Montserrat',
+            fontWeight: FontWeight.w400,
             fontSize: 16,
             color: Colors.white70,
           ),

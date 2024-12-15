@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/item_model.dart';
 import 'audio_player_widget.dart';
-import '../screens/detalle_screen.dart'; // Asegúrate de que este archivo esté en la carpeta correcta.
+import '../screens/detalle_screen.dart';
 
 class ItemWidget extends StatelessWidget {
   final ItemModel item;
@@ -24,23 +24,30 @@ class ItemWidget extends StatelessWidget {
         );
       },
       child: Padding(
-        padding: const EdgeInsets.symmetric(
-            vertical: 10.0), // Espacio vertical entre las imágenes.
-        child: Stack(
-          children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(16), // Bordes redondeados.
-              child:
-                  Image.asset(item.imagePath), // Alternar entre las imágenes.
-            ),
-            Positioned(
-              bottom: 8,
-              right: 8,
-              child: AudioPlayerWidget(
-                rutaAudio: item.audioPath, // Botón de reproducción de audio.
+        padding: const EdgeInsets.symmetric(vertical: 10.0),
+        child: Center(
+          child: Stack(
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(16),
+                child: SizedBox(
+                  width: 300,
+                  height: 300,
+                  child: Image.asset(
+                    item.imagePath,
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
-            ),
-          ],
+              Positioned(
+                bottom: 8,
+                right: 8,
+                child: AudioPlayerWidget(
+                  rutaAudio: item.audioPath,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

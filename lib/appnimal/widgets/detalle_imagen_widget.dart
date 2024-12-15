@@ -8,12 +8,11 @@ class DetalleImagenWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(16), // Bordes redondeados.
+      borderRadius: BorderRadius.circular(16),
       child: Image.asset(
         imagePath,
-        width: 300, // Ancho de la imagen.
-        fit: BoxFit
-            .fitWidth, // Ajusta la altura automáticamente manteniendo la proporción.
+        width: 300,
+        fit: BoxFit.fitWidth,
       ),
     );
   }

@@ -4,6 +4,3 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const Appnimal());
 }
-
-
-//Enviar trabajo a este mail: luisfevq@gmail.com  

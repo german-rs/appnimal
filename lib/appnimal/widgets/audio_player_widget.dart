@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
-import 'boton_reproduccion_widget.dart'; // Importa el nuevo widget del botón.
+import 'boton_reproduccion_widget.dart';
 
 class AudioPlayerWidget extends StatefulWidget {
   final String rutaAudio;
@@ -20,8 +20,6 @@ class _AudioPlayerWidgetState extends State<AudioPlayerWidget> {
   void initState() {
     super.initState();
     _audioPlayer = AudioPlayer();
-
-    // Listener para cambiar el estado cuando el audio termina.
     _audioPlayer.playerStateStream.listen((state) {
       if (state.processingState == ProcessingState.completed) {
         setState(() {

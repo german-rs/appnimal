@@ -13,7 +13,7 @@ class BotonReproduccionPausa extends StatelessWidget {
       icon: Stack(
         alignment: Alignment.center,
         children: [
-          const Icon(Icons.circle, color: Colors.red, size: 80),
+          const Icon(Icons.circle, color: Color(0xFFD3493E), size: 80),
           Icon(enReproduccion ? Icons.pause : Icons.play_arrow,
               color: Colors.white, size: 40),
         ],
