@@ -3,7 +3,7 @@
 
 🐦🐱🐄🐶🐴🦁🐔
 
-**Appnimal** es una aplicación móvil desarrollada en Flutter diseñada para ofrecer una experiencia informativa y entretenida sobre animales. La aplicación permite a los usuarios explorar una variedad de animales, ver detalles específicos de cada uno y escuchar sus sonidos. La arquitectura de la aplicación se basa en una estructura modular y bien organizada, facilitando la mantenibilidad y escalabilidad del proyecto.
+**Appnimal** es una aplicación móvil desarrollada en Flutter para ofrecer una experiencia informativa y entretenida sobre animales. La aplicación permite a los usuarios explorar una variedad de animales, ver detalles específicos de cada uno y escuchar sus sonidos. La arquitectura de la aplicación se basa en una estructura modular y bien organizada, facilitando la mantenibilidad y escalabilidad del proyecto.
 
 ## Características Principales
 
@@ -48,6 +48,14 @@ appnimal/
 - **JSON**: Formato de datos utilizado para almacenar y cargar información estática.
 
 - **just_audio**: ^0.9.42: Biblioteca utilizada para la reproducción de audio en la aplicación.
+
+## Capturas de pantalla
+
+| Principal | Detalle |
+|-----------|-----------|
+| ![Imagen de la pantalla principal](assets/img_readme/principal.jpg) | ![Imagen de la pantalla detalle](assets/img_readme/detalle.jpg) |
+
+
 
 ## Instalación y Uso
 
